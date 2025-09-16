@@ -6,7 +6,6 @@
 
 ## 😎 Credit
 
-🥳 Credit Goes To [Tushar](https://t.me/newstudent1885)
 
   
 ## 🔥 Commands
