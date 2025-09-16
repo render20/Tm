@@ -48,12 +48,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 5840594311 # Replace with the actual owner's user ID
+OWNER_ID = 8075836012 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [5840594311]
+SUDO_USERS = [8075836012]
 
-AUTH_CHANNEL = -1002595188554
+AUTH_CHANNEL = -1003025510345
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -105,11 +105,11 @@ async def sudo_command(bot: Client, message: Message):
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/newstudent1885") ],
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/Gamechangerpresident") ],
                     [
-                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/+dXRSrF1762o5NmRl") ],
+                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/SRC2026_1") ],
                     [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/+dXRSrF1762o5NmRl")                              
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/SRC2026_2")                              
                 ],           
             ]
       )
@@ -142,7 +142,7 @@ random_image_url = random.choice(image_urls)
 caption = (
         "**ʜᴇʟʟᴏ👋**\n\n"
         "➠ **ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.**\n"
-        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /tushar.\n"
+        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /ezhil.\n"
         "➠ **ғᴏʀ ɢᴜɪᴅᴇ sᴇɴᴅ /help."
 )
     
@@ -180,7 +180,7 @@ async def list_users(client: Client, msg: Message):
 async def help_command(client: Client, msg: Message):
     help_text = (
         "`/start` - Start the bot⚡\n\n"
-        "`/tushar2` or `/uplaod2` - Download and upload files (sudo)🎬\n\n"
+        "`/ezhil` or `/uplaod2` - Download and upload files (sudo)🎬\n\n"
         "`/restart2` - Restart the bot🔮\n\n" 
         "`/stop2` - Stop ongoing process🛑\n\n"
         "`/sudo add` - Add user or group or channel (owner)🎊\n\n"
@@ -190,7 +190,7 @@ async def help_command(client: Client, msg: Message):
     await msg.reply_text(help_text)
 
 # Upload command handler
-@bot.on_message(filters.command(["tushar2","upload2"]))
+@bot.on_message(filters.command(["ezhil","upload2"]))
 async def upload(bot: Client, m: Message):
     if not is_authorized(m.chat.id):
         await m.reply_text("**🚫You are not authorized to use this bot.**")
@@ -287,9 +287,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/newstudent1885)"
+    credit = "️[Ezhil]"
     if raw_text3 == '1':
-        CR = '[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/newstudent1885)'
+        CR = '[Ezhil]'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
